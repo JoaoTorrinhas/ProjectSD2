@@ -7,7 +7,7 @@ import commInfra.*;
 import genclass.GenericIO;
 
 /**
- *    Client side of the Museum Heist (Ordinadiry Thief).
+ *    Client side of the Museum Heist (Ordinary Thief).
  *
  *    Implementation of a client-server model of type 2 (server replication).
  *    Communication is based on a communication channel under the TCP protocol.
