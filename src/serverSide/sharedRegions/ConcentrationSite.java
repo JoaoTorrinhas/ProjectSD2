@@ -174,6 +174,11 @@ public class ConcentrationSite {
         reposStub.setAssaultPartyRoom(ap, room);
         preparingAP = ap;
 
+        // Update Master stat
+        master = (ConcentrationSiteClientProxy) Thread.currentThread();
+        master.setMasterState(MasterStates.ASSEMBLING_A_GROUP);
+        reposStub.setMasterState(0, master.getMasterState());
+
         while (recruited < SimulConsts.E) {
             if(summoned){
                 summoned = false;
@@ -196,10 +201,6 @@ public class ConcentrationSite {
         rooms[ap] = room;
         heisting += SimulConsts.E;
 
-        // Update Master stat
-        master = (ConcentrationSiteClientProxy) Thread.currentThread();
-        master.setMasterState(MasterStates.ASSEMBLING_A_GROUP);
-        reposStub.setMasterState(0, master.getMasterState());
     }
 
 
