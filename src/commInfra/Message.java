@@ -373,11 +373,6 @@ public class Message implements Serializable
         return rac;
     }
 
-
-
-
-
-
     /**
      *  Message instantiation (form 1i).
      *
@@ -467,8 +462,6 @@ public class Message implements Serializable
     }
 
 
-    
-
     /**
      *  Message instantiation (form 4i).
      *
@@ -507,7 +500,6 @@ public class Message implements Serializable
         }
      }
 
-
      /**
      *  Message instantiation (form 5i).
      *
@@ -531,7 +523,6 @@ public class Message implements Serializable
             System.exit (1);
         }
      }
-
 
 
      /**
@@ -560,8 +551,6 @@ public class Message implements Serializable
      }
 
 
-    
-
     /**
      *  Message instantiation (form 1i,1b).
      *
@@ -587,8 +576,6 @@ public class Message implements Serializable
         }
     }
 
-
-    
 
     /**
      *  Message instantiation (form 1i,1i[]).
